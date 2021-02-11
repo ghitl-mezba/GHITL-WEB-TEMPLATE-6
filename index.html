@@ -33,7 +33,7 @@
     <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
   </head>
 
-  <body>
+  <body class="noselect">
     <div class="page-wrapper">
       <!-- Preloader -->
       <div class="preloader"></div>
@@ -64,9 +64,7 @@
                   <ul>
                     <li><a href="services.html">All Services</a></li>
                     <li class="dropdown">
-                      <a href="bpa.html"
-                        >Business Process Automation</a
-                      >
+                      <a href="bpa.html">Business Process Automation</a>
                       <ul>
                         <li>
                           <a href="bpa.html#sd" class="nav-link">
@@ -101,9 +99,7 @@
                       </ul>
                     </li>
                     <li class="dropdown">
-                      <a href="dop.html"
-                        >Digital Operations & Platforms
-                      </a>
+                      <a href="dop.html">Digital Operations & Platforms </a>
                       <ul>
                         <li class="nav-item">
                           <a href="dop.html#dav" class="nav-link"
@@ -161,9 +157,7 @@
                       </ul>
                     </li>
                     <li class="dropdown">
-                      <a href="ift.html"
-                        >IT Function Transformation</a
-                      >
+                      <a href="ift.html">IT Function Transformation</a>
                       <ul>
                         <li class="nav-item">
                           <a href="ift.html#dsm" class="nav-link"
@@ -640,6 +634,21 @@
       }
       .sidenav-bar {
         background-color: #009688;
+      }
+      /* no select */
+      .noselect {
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+      }
+      /* no select */
+      /* cursor */
+      * {
+        cursor: url("images/cursor.cur"), auto !important
       }
     </style>
     <script type="text/javascript">
