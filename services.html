@@ -9,7 +9,7 @@
     <link href="css/responsive.css" rel="stylesheet" />
     <!--Color Switcher Mockup-->
     <link href="css/color-switcher-design.css" rel="stylesheet" />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Color Themes-->
     <link
       id="theme-color-file"
@@ -493,11 +493,13 @@
 
             <div class="content-box">
               <section class="blocks">
-                <h2 class="blocks1">Business Process Automation</h2>
+                <h2 class="blocks1" data-aos="zoom-in" data-aos-duration="1000">Business Process Automation</h2>
 
                 <div class="two-column row">
                   <div
                     class="text-column col-lg-6 col-md-6 col-sm-12 order-2"
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
                   >
                     <p class="para" style="text-align: justify">
                       Business Process Automation enables clients to
@@ -574,7 +576,7 @@
                         >Discover <i class="fa fa-arrow-right"></i></span
                     ></a>
                   </div>
-                  <div class="image-column col-lg-6 col-md-6 col-sm-12">
+                  <div class="image-column col-lg-6 col-md-6 col-sm-12" data-aos="fade-right" data-aos-duration="1000">
                     <figure class="image">
                       <a
                         href="images/resource/services-details-image/Bpo.png"
@@ -591,7 +593,7 @@
 
               <section class="blocks" id="system-automation">
                 <h2 class="blocks1">Digital Operations & Platforms</h2>
-                <div class="two-column row">
+                <div class="two-column row direction">
                   <div
                     class="text-column col-lg-6 col-md-6 col-sm-12 order-2"
                   >
@@ -777,7 +779,7 @@
               <section class="blocks" id="solution-provider">
                 <h2 class="blocks1">Fintech Solution</h2>
 
-                <div class="two-column row">
+                <div class="two-column row direction">
                   <div
                     class="text-column col-lg-6 col-md-6 col-sm-12 order-2"
                   >
@@ -863,7 +865,7 @@
               <section class="blocks" id="solution-provider">
                 <h2 class="blocks1">Solution Provider</h2>
 
-                <div class="two-column row">
+                <div class="two-column row direction">
                   <div
                     class="text-column col-lg-6 col-md-6 col-sm-12 order-2"
                   >
@@ -1686,6 +1688,9 @@
       .hidden {
         display: none !important;
       }
+      .direction {
+        flex-direction: row-reverse;
+      }
     </style>
 
     <script src="js/jquery.js"></script>
@@ -1701,7 +1706,11 @@
     <script src="js/swiper.min.js"></script>
     <script src="js/TweenMax.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Color Setting -->
     <script src="js/color-settings.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
